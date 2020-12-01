@@ -1,21 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+
+import Router from './routes'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
+import DefaultStatusBar from './components/StatusBar'
+
+import { View } from 'react-native'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Welcome Luís Fernnado!</Text>
-      <StatusBar style="auto" />
+    <View style={{flex: 1}}>
+       <DefaultStatusBar backgroundColor="rgb(192,45,26)" barStyle="light-content" />
+        <SafeAreaProvider>
+            <Router/>
+        </SafeAreaProvider>  
     </View>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+};
