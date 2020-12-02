@@ -14,5 +14,5 @@ export default function App() {
             <Router/>
         </SafeAreaProvider>  
     </View>
-  );
-};
+  )
+}

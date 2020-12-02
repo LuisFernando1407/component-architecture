@@ -13,6 +13,6 @@ const Router = createStackNavigator({
             header: <Header title={navigation.getParam('title', 'Content-Title')} subtitle={navigation.getParam('subtitle', 'Content-Subtitle')} navigation={navigation}/>
         }),
     }
-);
+)
 
 export default createAppContainer(Router)

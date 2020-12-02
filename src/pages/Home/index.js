@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import { View } from '../Home/style'
 import Topic from '../../components/Topic'
-import { Dimensions } from 'react-native';
+import { Dimensions } from 'react-native'
 
 const Home = ( { navigation } ) => {
     const [title, setTitle] = useState('Luís Fernando')
@@ -13,7 +13,7 @@ const Home = ( { navigation } ) => {
         {title: "Sistemas Distribuidos"},
         {title: "Programação de Scripts"}
     ]
-    const { width } = Dimensions.get('window');
+    const { width } = Dimensions.get('window')
 
     useEffect(() => {
         navigation.setParams({title, subtitle})
