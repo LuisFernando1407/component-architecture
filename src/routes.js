@@ -10,7 +10,7 @@ const Router = createStackNavigator({
     }, {
         headerMode: 'screen',
         defaultNavigationOptions: ({ navigation }) => ({
-            header: <Header title={navigation.getParam('title', 'Luís Fernando')} subtitle={navigation.getParam('subtitle', 'SI')} navigation={navigation}/>
+            header: <Header title={navigation.getParam('title', 'Content-Title')} subtitle={navigation.getParam('subtitle', 'Content-Subtitle')} navigation={navigation}/>
         }),
     }
 );
